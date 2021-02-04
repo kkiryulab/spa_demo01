@@ -1,20 +1,25 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import page1 from '@/components/page1'
-import page2 from '@/components/page2'
+import home from '@/components/home'
+import about from '@/components/about'
+import access from '@/components/access'
 
 Vue.use(Router)
 
 export default new Router({
-    routers: [
+    routes: [
         {
             path: '/',
-            component: page1
+            component: home
         },
         {
-            path: '/page2',
-            component: page2
+            path: '/about',
+            component: about
+        },
+        {
+            path: '/access',
+            component: access
         }
     ]
 })
